@@ -15,7 +15,7 @@ export default function Home() {
             prefetch={false}
           >
             <span className="text-gray-800 dark:text-white font-bold tracking-light">
-              DoodleCord
+              GEN-COLLAB
             </span>
           </Link>
           <div className="flex items-center gap-2">
@@ -45,10 +45,10 @@ export default function Home() {
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-md font-bold text-gray-800 dark:text-white">
-              &copy; 2024 DoodleCord. All rights reserved.
+              &copy; 2024 GEN-COLLAB. All rights reserved.
             </p>
             <Link
-              href="https://github.com/ns-rg/doodlecord"
+              href="https://github.com/ns-rg/GEN-COLLAB"
               className="flex items-center gap-2 text-lg font-semibold"
             >
               <Github />

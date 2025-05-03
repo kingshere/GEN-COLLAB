@@ -1,53 +1,95 @@
-![Doodle Cord](https://github.com/NisargPatel14/doodlecord/blob/master/Doodle%20cord.png)
+# GEN-COLLAB - A Modern Communication & Collaboration Platform 🚀
 
-# A seamless communication platform. Collaborative, secure, and connected across all channels.
+## Overview
 
-## 🚀 Features
+GEN-COLLAB is a comprehensive communication platform that combines real-time messaging, video conferencing, and collaborative whiteboarding. Built with modern technologies and a focus on user experience, it offers a seamless integration of multiple communication channels in one unified interface.
 
-- 💬 Real-time messaging using **Socket.io**
-- 📎 Send attachments as messages using **UploadThing**
-- ✏️ Delete & Edit messages in real time for all users
-- 🎙️ Create **Text, Audio, and Video call Channels**
-- 🔗 1:1 conversation between members
-- 📹 1:1 video calls between members
-- 👥 Member management (Kick, Role change Guest / Moderator)
-- 🎟️ Unique invite link generation & full working invite system
-- 🖍️ Collaborative whiteboard with a virtual hand-drawn style
-- 🔄 Infinite loading for messages in batches of 10 with **@tanstack/query**
-- 🛠️ Server creation and customization
-- 🌗 Light / Dark mode
-- 📱 Full responsivity and mobile UI
+## 🌐 Communication Hub Features
 
-## 🛠 Tools and Technologies
+### Real-time Messaging System
 
-- 🎨 Beautiful UI using **TailwindCSS** and **ShadcnUI**
-- 🔁 WebSocket fallback with **Polling** and alerts
-- 🗄️ ORM using **Prisma**
-- 🗃️ MySQL database using **NeonDB**
-- 🔑 Authentication with **Clerk**
-- ✏️ TLDraw For **whiteboard**
+- **Socket.IO Integration**:
+  - Implements real-time bidirectional communication
+  - Handles message delivery with WebSocket fallback to polling
+  - Challenge: Managing concurrent connections and ensuring message delivery order
 
-## 🛠 Steps to Build the project
+### Voice & Video Communication
 
-- Clone the repository using git clone command or directly download the zip file from github.
-- Install dependencies by running the following command : <code>npm i</code>
-- Add your own secret keys for the project by creating env file.
-- After installing all the dependencies, run the project by using following command : <code>npm run dev</code>
+- **LiveKit Integration**:
+  - High-quality 1:1 video calls
+  - Audio channels for group communication
+  - Challenge: Optimizing media streams for different network conditions
 
-## 🛠 Env file contents: 
+### Server Management
 
-- NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<!yourSecretKey>
-- CLERK_SECRET_KEY=<!yourSecretKey>
-- NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-- NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-- NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-- NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+- **Advanced Server Architecture**:
+  - Custom server creation and configuration
+  - Role-based access control (Guest/Moderator)
+  - Invite system with unique link generation
+  - Challenge: Implementing secure role management and invite validation
 
-- DATABASE_URL="<!yourSecretKey>"
-  
-- UPLOADTHING_SECRET='<!yourSecretKey>'
-- UPLOADTHING_APP_ID='<!yourSecretKey>'
-  
-- LIVEKIT_API_KEY  = <!yourSecretKey>
-- LIVEKIT_API_SECRET  = <!yourSecretKey>
-- NEXT_PUBLIC_LIVEKIT_URL  = <!yourSecretKey>
+### Message Handling
+
+- **Rich Message Features**:
+  - Real-time message editing and deletion
+  - File attachments via UploadThing
+  - Infinite scroll with message batching
+  - Challenge: Maintaining consistency across multiple clients during edits
+
+## 🎨 Interactive Whiteboard System
+
+### Collaborative Drawing Features
+
+- **TLDraw Integration**:
+  - Real-time collaborative drawing
+  - Virtual hand-drawn style rendering
+  - Multi-user cursor tracking
+  - Challenge: Synchronizing drawing states across multiple users
+
+### Technical Implementation
+
+- **State Management**:
+  - Real-time stroke synchronization
+  - Conflict resolution for concurrent edits
+  - Challenge: Minimizing latency while maintaining drawing accuracy
+
+## 🛠️ Technical Stack & Implementation Challenges
+
+### Frontend Architecture
+
+- **Next.js & TypeScript**:
+  - Type-safe development environment
+  - Server-side rendering for improved performance
+  - Challenge: Managing complex state with TypeScript constraints
+
+### Database & ORM
+
+- **Prisma & NeonDB**:
+  - Serverless PostgreSQL implementation
+  - Type-safe database queries
+  - Challenge: Optimizing database access patterns for real-time features
+
+### Authentication
+
+- **Clerk Integration**:
+  - Secure user authentication
+  - Social login options
+  - Challenge: Managing user sessions across multiple features
+
+### UI/UX Design
+
+- **TailwindCSS & ShadcnUI**:
+  - Responsive design system
+  - Dark/Light mode support
+  - Custom component library
+  - Challenge: Maintaining consistent design across different device sizes
+
+## 📱 Cross-Platform Support
+
+- Fully responsive design
+- Mobile-optimized UI
+- Desktop-first approach with mobile adaptability
+
+---
+
+This project demonstrates the complexity of modern web applications, combining multiple real-time features while maintaining performance and user experience. The integration of various technologies showcases the possibilities of creating a comprehensive communication platform that rivals commercial solutions.

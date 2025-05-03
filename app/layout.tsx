@@ -12,9 +12,9 @@ import { QueryProvider } from "@/components/providers/query-provider";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DoodleCord",
+  title: "GEN-COLLAB",
   description:
-    "DoodleCord is a collaborative platform for creating workspaces, communicating via text and audio, sharing media, and brainstorming with a virtual whiteboard. Perfect for seamless personal and professional collaboration.",
+    "GEN-COLLAB is a collaborative platform for creating workspaces, communicating via text and audio, sharing media, and brainstorming with a virtual whiteboard. Perfect for seamless personal and professional collaboration.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
             attribute="class"
             defaultTheme="dark"
             enableSystem={false}
-            storageKey="doodlecord-theme"
+            storageKey="GEN-COLLAB-theme"
           >
             <SocketProvider>
             <ModalProvider />
