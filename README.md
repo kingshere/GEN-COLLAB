@@ -6,16 +6,16 @@ GEN-COLLAB is a comprehensive communication platform that combines real-time mes
 
 ## 📸 Application Screenshots
 
-### Authentication & Setup
-![Authentication Page](./images/Screenshot%202025-06-16%20021822.png)
+### Landing & Setup
+![Landing Page](./images/Screenshot%202025-06-16%20021822.png)
 
-### Server Management
+### Server
 ![Server Management](./images/Screenshot%202025-06-16%20023655.png)
 
 ### Real-time Chat
 ![Chat Interface](./images/Screenshot%202025-06-16%20023820.png)
 
-### Video Calls
+### Video Calls Invite
 ![Video Call Feature](./images/Screenshot%202025-06-16%20023856.png)
 
 ### Collaborative Whiteboard
