@@ -18,7 +18,7 @@ const ioHandler = (req:NextApiRequest,res: NextApiResponseServerIo) => {
         
         if(!res.socket.server.io){
             const path = "/api/socket/io"
-            const httpServer : NetServer = res.socket.server as any;
+            const httpServer: NetServer = res.socket.server as any;
             
             // Initialize Socket.IO with proper server binding
             const io = new ServerIO(httpServer, {
@@ -29,8 +29,11 @@ const ioHandler = (req:NextApiRequest,res: NextApiResponseServerIo) => {
                     origin: "*",
                     methods: ["GET", "POST"]
                 },
-                destroyUpgrade: false,
-                allowEIO3: true
+                pingTimeout: 60000,
+                upgradeTimeout: 30000,
+                allowRequest: (req, callback) => {
+                    callback(null, true);
+                }
             });
 
             // Add connection handler
